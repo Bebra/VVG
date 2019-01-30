@@ -1,0 +1,349 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 30, 2019 at 08:15 PM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `vvg`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `drzave`
+--
+
+CREATE TABLE `drzave` (
+  `id` int(11) NOT NULL,
+  `drzava_ime` varchar(80) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `pozivni` int(5) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `drzave`
+--
+
+INSERT INTO `drzave` (`id`, `drzava_ime`, `pozivni`) VALUES
+(1, 'AFGHANISTAN', 93),
+(2, 'ALBANIA', 355),
+(3, 'ALGERIA', 213),
+(4, 'AMERICAN SAMOA', 1684),
+(5, 'ANDORRA', 376),
+(6, 'ANGOLA', 244),
+(7, 'ANGUILLA', 1264),
+(8, 'ANTARCTICA', 0),
+(9, 'ANTIGUA AND BARBUDA', 1268),
+(10, 'ARGENTINA', 54),
+(11, 'ARMENIA', 374),
+(12, 'ARUBA', 297),
+(13, 'AUSTRALIA', 61),
+(14, 'AUSTRIA', 43),
+(15, 'AZERBAIJAN', 994),
+(16, 'BAHAMAS', 1242),
+(17, 'BAHRAIN', 973),
+(18, 'BANGLADESH', 880),
+(19, 'BARBADOS', 1246),
+(20, 'BELARUS', 375),
+(21, 'BELGIUM', 32),
+(22, 'BELIZE', 501),
+(23, 'BENIN', 229),
+(24, 'BERMUDA', 1441),
+(25, 'BHUTAN', 975),
+(26, 'BOLIVIA', 591),
+(27, 'BOSNIA AND HERZEGOVINA', 387),
+(28, 'BOTSWANA', 267),
+(29, 'BOUVET ISLAND', 0),
+(30, 'BRAZIL', 55),
+(31, 'BRITISH INDIAN OCEAN TERRITORY', 246),
+(32, 'BRUNEI DARUSSALAM', 673),
+(33, 'BULGARIA', 359),
+(34, 'BURKINA FASO', 226),
+(35, 'BURUNDI', 257),
+(36, 'CAMBODIA', 855),
+(37, 'CAMEROON', 237),
+(38, 'CANADA', 1),
+(39, 'CAPE VERDE', 238),
+(40, 'CAYMAN ISLANDS', 1345),
+(41, 'CENTRAL AFRICAN REPUBLIC', 236),
+(42, 'CHAD', 235),
+(43, 'CHILE', 56),
+(44, 'CHINA', 86),
+(45, 'CHRISTMAS ISLAND', 61),
+(46, 'COCOS (KEELING) ISLANDS', 672),
+(47, 'COLOMBIA', 57),
+(48, 'COMOROS', 269),
+(49, 'CONGO', 242),
+(50, 'CONGO, THE DEMOCRATIC REPUBLIC OF THE', 242),
+(51, 'COOK ISLANDS', 682),
+(52, 'COSTA RICA', 506),
+(53, 'COTE D\'IVOIRE', 225),
+(54, 'CROATIA', 385),
+(55, 'CUBA', 53),
+(56, 'CYPRUS', 357),
+(57, 'CZECH REPUBLIC', 420),
+(58, 'DENMARK', 45),
+(59, 'DJIBOUTI', 253),
+(60, 'DOMINICA', 1767),
+(61, 'DOMINICAN REPUBLIC', 1809),
+(62, 'ECUADOR', 593),
+(63, 'EGYPT', 20),
+(64, 'EL SALVADOR', 503),
+(65, 'EQUATORIAL GUINEA', 240),
+(66, 'ERITREA', 291),
+(67, 'ESTONIA', 372),
+(68, 'ETHIOPIA', 251),
+(69, 'FALKLAND ISLANDS (MALVINAS)', 500),
+(70, 'FAROE ISLANDS', 298),
+(71, 'FIJI', 679),
+(72, 'FINLAND', 358),
+(73, 'FRANCE', 33),
+(74, 'FRENCH GUIANA', 594),
+(75, 'FRENCH POLYNESIA', 689),
+(76, 'FRENCH SOUTHERN TERRITORIES', 0),
+(77, 'GABON', 241),
+(78, 'GAMBIA', 220),
+(79, 'GEORGIA', 995),
+(80, 'GERMANY', 49),
+(81, 'GHANA', 233),
+(82, 'GIBRALTAR', 350),
+(83, 'GREECE', 30),
+(84, 'GREENLAND', 299),
+(85, 'GRENADA', 1473),
+(86, 'GUADELOUPE', 590),
+(87, 'GUAM', 1671),
+(88, 'GUATEMALA', 502),
+(89, 'GUINEA', 224),
+(90, 'GUINEA-BISSAU', 245),
+(91, 'GUYANA', 592),
+(92, 'HAITI', 509),
+(93, 'HEARD ISLAND AND MCDONALD ISLANDS', 0),
+(94, 'HOLY SEE (VATICAN CITY STATE)', 39),
+(95, 'HONDURAS', 504),
+(96, 'HONG KONG', 852),
+(97, 'HUNGARY', 36),
+(98, 'ICELAND', 354),
+(99, 'INDIA', 91),
+(100, 'INDONESIA', 62),
+(101, 'IRAN, ISLAMIC REPUBLIC OF', 98),
+(102, 'IRAQ', 964),
+(103, 'IRELAND', 353),
+(104, 'ISRAEL', 972),
+(105, 'ITALY', 39),
+(106, 'JAMAICA', 1876),
+(107, 'JAPAN', 81),
+(108, 'JORDAN', 962),
+(109, 'KAZAKHSTAN', 7),
+(110, 'KENYA', 254),
+(111, 'KIRIBATI', 686),
+(112, 'KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF', 850),
+(113, 'KOREA, REPUBLIC OF', 82),
+(114, 'KUWAIT', 965),
+(115, 'KYRGYZSTAN', 996),
+(116, 'LAO PEOPLE\'S DEMOCRATIC REPUBLIC', 856),
+(117, 'LATVIA', 371),
+(118, 'LEBANON', 961),
+(119, 'LESOTHO', 266),
+(120, 'LIBERIA', 231),
+(121, 'LIBYAN ARAB JAMAHIRIYA', 218),
+(122, 'LIECHTENSTEIN', 423),
+(123, 'LITHUANIA', 370),
+(124, 'LUXEMBOURG', 352),
+(125, 'MACAO', 853),
+(126, 'MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF', 389),
+(127, 'MADAGASCAR', 261),
+(128, 'MALAWI', 265),
+(129, 'MALAYSIA', 60),
+(130, 'MALDIVES', 960),
+(131, 'MALI', 223),
+(132, 'MALTA', 356),
+(133, 'MARSHALL ISLANDS', 692),
+(134, 'MARTINIQUE', 596),
+(135, 'MAURITANIA', 222),
+(136, 'MAURITIUS', 230),
+(137, 'MAYOTTE', 269),
+(138, 'MEXICO', 52),
+(139, 'MICRONESIA, FEDERATED STATES OF', 691),
+(140, 'MOLDOVA, REPUBLIC OF', 373),
+(141, 'MONACO', 377),
+(142, 'MONGOLIA', 976),
+(143, 'MONTSERRAT', 1664),
+(144, 'MOROCCO', 212),
+(145, 'MOZAMBIQUE', 258),
+(146, 'MYANMAR', 95),
+(147, 'NAMIBIA', 264),
+(148, 'NAURU', 674),
+(149, 'NEPAL', 977),
+(150, 'NETHERLANDS', 31),
+(151, 'NETHERLANDS ANTILLES', 599),
+(152, 'NEW CALEDONIA', 687),
+(153, 'NEW ZEALAND', 64),
+(154, 'NICARAGUA', 505),
+(155, 'NIGER', 227),
+(156, 'NIGERIA', 234),
+(157, 'NIUE', 683),
+(158, 'NORFOLK ISLAND', 672),
+(159, 'NORTHERN MARIANA ISLANDS', 1670),
+(160, 'NORWAY', 47),
+(161, 'OMAN', 968),
+(162, 'PAKISTAN', 92),
+(163, 'PALAU', 680),
+(164, 'PALESTINIAN TERRITORY, OCCUPIED', 970),
+(165, 'PANAMA', 507),
+(166, 'PAPUA NEW GUINEA', 675),
+(167, 'PARAGUAY', 595),
+(168, 'PERU', 51),
+(169, 'PHILIPPINES', 63),
+(170, 'PITCAIRN', 0),
+(171, 'POLAND', 48),
+(172, 'PORTUGAL', 351),
+(173, 'PUERTO RICO', 1787),
+(174, 'QATAR', 974),
+(175, 'REUNION', 262),
+(176, 'ROMANIA', 40),
+(177, 'RUSSIAN FEDERATION', 70),
+(178, 'RWANDA', 250),
+(179, 'SAINT HELENA', 290),
+(180, 'SAINT KITTS AND NEVIS', 1869),
+(181, 'SAINT LUCIA', 1758),
+(182, 'SAINT PIERRE AND MIQUELON', 508),
+(183, 'SAINT VINCENT AND THE GRENADINES', 1784),
+(184, 'SAMOA', 684),
+(185, 'SAN MARINO', 378),
+(186, 'SAO TOME AND PRINCIPE', 239),
+(187, 'SAUDI ARABIA', 966),
+(188, 'SENEGAL', 221),
+(189, 'SERBIA AND MONTENEGRO', 381),
+(190, 'SEYCHELLES', 248),
+(191, 'SIERRA LEONE', 232),
+(192, 'SINGAPORE', 65),
+(193, 'SLOVAKIA', 421),
+(194, 'SLOVENIA', 386),
+(195, 'SOLOMON ISLANDS', 677),
+(196, 'SOMALIA', 252),
+(197, 'SOUTH AFRICA', 27),
+(198, 'SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS', 0),
+(199, 'SPAIN', 34),
+(200, 'SRI LANKA', 94),
+(201, 'SUDAN', 249),
+(202, 'SURINAME', 597),
+(203, 'SVALBARD AND JAN MAYEN', 47),
+(204, 'SWAZILAND', 268),
+(205, 'SWEDEN', 46),
+(206, 'SWITZERLAND', 41),
+(207, 'SYRIAN ARAB REPUBLIC', 963),
+(208, 'TAIWAN, PROVINCE OF CHINA', 886),
+(209, 'TAJIKISTAN', 992),
+(210, 'TANZANIA, UNITED REPUBLIC OF', 255),
+(211, 'THAILAND', 66),
+(212, 'TIMOR-LESTE', 670),
+(213, 'TOGO', 228),
+(214, 'TOKELAU', 690),
+(215, 'TONGA', 676),
+(216, 'TRINIDAD AND TOBAGO', 1868),
+(217, 'TUNISIA', 216),
+(218, 'TURKEY', 90),
+(219, 'TURKMENISTAN', 7370),
+(220, 'TURKS AND CAICOS ISLANDS', 1649),
+(221, 'TUVALU', 688),
+(222, 'UGANDA', 256),
+(223, 'UKRAINE', 380),
+(224, 'UNITED ARAB EMIRATES', 971),
+(225, 'UNITED KINGDOM', 44),
+(226, 'UNITED STATES', 1),
+(227, 'UNITED STATES MINOR OUTLYING ISLANDS', 1),
+(228, 'URUGUAY', 598),
+(229, 'UZBEKISTAN', 998),
+(230, 'VANUATU', 678),
+(231, 'VENEZUELA', 58),
+(232, 'VIET NAM', 84),
+(233, 'VIRGIN ISLANDS, BRITISH', 1284),
+(234, 'VIRGIN ISLANDS, U.S.', 1340),
+(235, 'WALLIS AND FUTUNA', 681),
+(236, 'WESTERN SAHARA', 212),
+(237, 'YEMEN', 967),
+(238, 'ZAMBIA', 260),
+(239, 'ZIMBABWE', 263);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `korisnik`
+--
+
+CREATE TABLE `korisnik` (
+  `id` int(11) NOT NULL,
+  `ime` varchar(50) COLLATE utf8_bin NOT NULL,
+  `prezime` varchar(50) COLLATE utf8_bin NOT NULL,
+  `mail` varchar(50) COLLATE utf8_bin NOT NULL,
+  `drzava_id` int(11) NOT NULL,
+  `grad` varchar(50) COLLATE utf8_bin NOT NULL,
+  `ulica` varchar(50) COLLATE utf8_bin NOT NULL,
+  `datumrodjenja` varchar(15) COLLATE utf8_bin NOT NULL,
+  `lozinka` varchar(50) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `korisnik`
+--
+
+INSERT INTO `korisnik` (`id`, `ime`, `prezime`, `mail`, `drzava_id`, `grad`, `ulica`, `datumrodjenja`, `lozinka`) VALUES
+(1, 'aaa', 'aaa', 'aaa', 1, 'sss', 'sss', '2018-12-03', 'qweqweqwe'),
+(2, 'IME', 'wwww', '', 0, '', '', '0000-00-00', 'b173bc8223f3b8a819599449aa1fd53e'),
+(3, 'IME', 'wwww', 'crafttest@dfff', 235, 'ttttttt', 'rrrrrr', '2018-12-07', 'ec02c59dee6faaca3189bace969c22d3'),
+(4, 'asdfasdfa', 'wwwwsdfasdfasdfa', 'crafttest@dfasdfasdfdsfff', 133, 'tttttttsdfasdfa', 'rrrrrrsdfasdfa', '2017-10-13', 'f61b26d635309536c3c83c0adc3cb972'),
+(5, 'user', 'aaaa', 'asdfas@asdfasdf.ddd', 18, 'aaaa', 'aaaa', '2018-12-10', '923352284767451ab158a387a283df26'),
+(6, 'sdfsdfsdfdf', 'dsfdf', 'crafttest@ffff', 1, 'asdfasdf', 'sasdf', '2018-12-12', '11461fda362e7c11329a8360417554d9'),
+(7, 'novi', 'aaa', 'sss@ffff.fff', 13, 'asdfasdf', 'sasdf', '2018-12-12', '87d008f75d490491982a193092087e0c'),
+(8, 'korisnik2', 'aaaa', 'asdfasdf@sdfasdf', 236, 'grad', 'ulica', '2016-09-13', '923352284767451ab158a387a283df26');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `drzave`
+--
+ALTER TABLE `drzave`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `korisnik`
+--
+ALTER TABLE `korisnik`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `drzave`
+--
+ALTER TABLE `drzave`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=240;
+
+--
+-- AUTO_INCREMENT for table `korisnik`
+--
+ALTER TABLE `korisnik`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

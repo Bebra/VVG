@@ -1,0 +1,56 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+nav {
+
+
+
+
+}
+
+
+a {
+  background-color: gray;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:visited {
+  background-color: gray;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: black;
+}
+
+a:active {
+  background-color: black;}
+
+input[type=text] {
+  width: 30%;
+  padding: 10px 16px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 30%;
+  padding: 10px 16px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
